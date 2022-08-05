@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { isTemplateSpan } from 'typescript';
 import styles from './App.module.css';
 import poweredImage from './assets/powered.png';
 import { levels, calcularIMC} from './helpers/imc';
+import { GridItem } from './components/GridItem';
 
 
 const App = () => {
@@ -48,7 +50,13 @@ const App = () => {
           />
         <button onClick={handleCalcularBotao}>Calcular</button>
         </div>
-        <div className={styles.rightSide}>...</div>
+        <div className={styles.rightSide}>
+          <div className={styles.grid}>
+            {levels.map((item, key) => (
+              <GridItem key={key} item={item} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

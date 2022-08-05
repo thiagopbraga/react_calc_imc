@@ -44,23 +44,31 @@ body {
 }
 
 .container .leftSide button {
-    background-color: #227C9D;
-    color: white;
-    font-size: 15px;
-    border: 0;
-    border-radius: 10px;
-    padding: 15px 0;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 40px;
-    transition: all 0.3s ease;
+  background-color: #227c9d;
+  color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px 0;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: all 0.3s ease;
 }
 
-.container .leftSide button:hover{
-    opacity: .8;
+.container .leftSide button:hover {
+  opacity: 0.8;
 }
 
 .container .rightSide {
   flex: 1;
   margin-left: 40px;
+  display: flex;
+}
+
+.container .rightSide .grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
