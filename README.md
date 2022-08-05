@@ -2,7 +2,7 @@
 
 Projeto criado durante curso de React da B7Web
 
-## React
+## React + TypeScript
 
 Projeto iniciado com Create React App
 
