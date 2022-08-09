@@ -10,8 +10,20 @@ type Props = {
 export const GridItem = ({item} : Props) => {
     return (
         <div className={styles.main} style={{ backgroundColor: item.color }}> 
+            <div className={styles.gridIcon}>
+                <img src={item.icon === 'up' ? upImage : downImage} alt="" width="30"/>
+            </div>
+            <div className={styles.gridTitle}>{item.title}</div>
 
+            {item.seu_imc &&
+                <div className={styles.seu_imc}> Seu IMC é de {item.seu_imc} kg/m²</div>    
+            }
 
+            <div className={styles.gridInfo}>
+                <>
+                    IMC está entre <strong>{item.imc[0]}</strong> e <strong>{item.imc[1]}</strong>
+                </>
+            </div>
         </div>
     )
 }
