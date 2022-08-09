@@ -6,7 +6,11 @@ Projeto criado durante curso de React da B7Web
 
 Projeto iniciado com Create React App
 
-### `npm start`
+### Instalação
+- `npm install`
+
+### Para rodar 
+- `npm start`
 
 Rode esta aplicação em modo de desenvolvimento
 Abra [http://localhost:3000](http://localhost:3000) para visualizar no seu browser.\
